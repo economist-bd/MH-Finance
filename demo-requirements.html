@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রয়োজনীয় কাগজপত্র - MH Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+        body { font-family: 'Tiro Bangla', serif; background-color: #f3f4f6; }
+        .bg-bank-green { background-color: #0b8e36; }
+        .text-bank-yellow { color: #facc15; }
+        
+        @media (min-width: 768px) {
+            .dropdown:hover .dropdown-menu { display: block; }
+        }
+        .transition-all { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <nav class="bg-bank-green text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <i class="fas fa-building-columns text-bank-yellow"></i> MH Finance
+                </a>
+                
+                <div class="hidden md:flex space-x-6 items-center" id="desktop-menu"></div>
+
+                <button id="mobileMenuBtn" class="md:hidden text-2xl focus:outline-none">
+                    <i class="fas fa-bars text-bank-yellow"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 border-t border-green-700 max-h-[70vh] overflow-y-auto"></div>
+    </nav>
+
+    <header class="bg-bank-green text-white py-12 px-4 text-center relative overflow-hidden shadow-md">
+        <div class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-br-full opacity-20"></div>
+        <div class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-tl-full opacity-10"></div>
+        <h1 class="text-3xl md:text-5xl font-bold relative z-10"><i class="fas fa-file-invoice text-bank-yellow"></i> প্রয়োজনীয় কাগজপত্র</h1>
+        <p class="mt-3 text-green-100 text-base md:text-xl relative z-10">বিভিন্ন হিসাব খোলার জন্য প্রয়োজনীয় ডকুমেন্টসের তালিকা</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 mt-8 mb-12 flex-grow w-full">
+        
+        <div class="text-center mb-10">
+            <p class="text-gray-600 md:text-lg max-w-3xl mx-auto">
+                এমএইচ ফাইন্যান্স (MH Finance)-এ খুব সহজেই আপনি যেকোনো একাউন্ট খুলতে পারবেন। নিচে আমাদের বিভিন্ন সেবার জন্য কী কী ডকুমেন্টস লাগবে তার একটি পূর্ণাঙ্গ তালিকা দেওয়া হলো।
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="bg-white rounded-2xl shadow-lg border-t-4 border-bank-green p-6 md:p-8 hover:shadow-xl transition-all">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-green-100 text-bank-green rounded-full flex items-center justify-center text-lg">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    সাধারণ হিসাব (সেভিংস/কারেন্ট)
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i> 
+                        <span>হিসাবধারীর ২ কপি পাসপোর্ট সাইজের রঙিন ছবি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i> 
+                        <span>হিসাবধারীর জাতীয় পরিচয়পত্র (NID) বা পাসপোর্টের ফটোকপি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i> 
+                        <span>নমিনির ১ কপি পাসপোর্ট সাইজের রঙিন ছবি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i> 
+                        <span>নমিনির জাতীয় পরিচয়পত্র (NID) বা জন্ম নিবন্ধনের ফটোকপি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i> 
+                        <span>বর্তমান ঠিকানার প্রমাণস্বরূপ বিদ্যুৎ বা গ্যাস বিলের কপি (প্রযোজ্য ক্ষেত্রে)।</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border-t-4 border-blue-500 p-6 md:p-8 hover:shadow-xl transition-all">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center text-lg">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    স্টুডেন্ট একাউন্ট
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i> 
+                        <span>শিক্ষার্থীর ২ কপি ছবি এবং জন্ম নিবন্ধন বা এনআইডির ফটোকপি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i> 
+                        <span>শিক্ষাপ্রতিষ্ঠানের বৈধ আইডি কার্ড বা প্রত্যয়নপত্রের কপি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i> 
+                        <span>শিক্ষার্থীর বয়স ১৮ বছরের নিচে হলে অভিভাবকের ২ কপি ছবি ও এনআইডি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i> 
+                        <span>নমিনির (পিতা/মাতা হতে পারেন) ১ কপি ছবি ও এনআইডি।</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border-t-4 border-purple-500 p-6 md:p-8 hover:shadow-xl transition-all">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-lg">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    ডিপিএস (DPS) / এফডিআর (FDR)
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-purple-500 mt-1"></i> 
+                        <span>আবেদনকারীর ২ কপি ছবি ও এনআইডির ফটোকপি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-purple-500 mt-1"></i> 
+                        <span>নমিনির ১ কপি ছবি ও এনআইডির ফটোকপি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-purple-500 mt-1"></i> 
+                        <span>MH Finance এ পূর্বে সাধারণ হিসাব খোলা থাকলে শুধুমাত্র একাউন্ট নম্বর প্রদান করলেই হবে।</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border-t-4 border-yellow-500 p-6 md:p-8 hover:shadow-xl transition-all">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-lg">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                    </div>
+                    কৃষি / সাধারণ বিনিয়োগ (লোন)
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-yellow-500 mt-1"></i> 
+                        <span>আবেদনকারীর ২ কপি ছবি এবং এনআইডির ফটোকপি।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-yellow-500 mt-1"></i> 
+                        <span>কৃষি জমি বা ব্যবসায়ের বৈধ কাগজপত্র (পরচা/খতিয়ান/ট্রেড লাইসেন্স)।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-yellow-500 mt-1"></i> 
+                        <span>স্থানীয় জনপ্রতিনিধি (চেয়ারম্যান/মেম্বার) প্রদত্ত নাগরিকত্ব সনদ।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-yellow-500 mt-1"></i> 
+                        <span>একজন যোগ্য জামিনদার (Guarantor) এর ছবি ও এনআইডির ফটোকপি।</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="mt-12 bg-bank-green rounded-2xl p-8 text-center text-white shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-left relative z-10 md:w-2/3">
+                <h3 class="text-2xl md:text-3xl font-bold mb-2">কাগজপত্র প্রস্তুত?</h3>
+                <p class="text-green-100">আজই অনলাইনে ফর্ম পূরণ করে আপনার পছন্দের একাউন্টটি খুলে ফেলুন।</p>
+            </div>
+            <div class="relative z-10 md:w-1/3 text-right">
+                <a href="account-open.html" class="inline-block bg-yellow-400 text-green-900 font-bold px-8 py-4 rounded-full hover:bg-yellow-300 hover:shadow-lg transition-all w-full md:w-auto text-center">
+                    <i class="fas fa-paper-plane mr-2"></i> একাউন্ট খুলুন
+                </a>
+            </div>
+            <div class="absolute right-0 top-0 opacity-10 text-9xl transform translate-x-1/4 -translate-y-1/4">
+                <i class="fas fa-folder-open"></i>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white pt-10 pb-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-2"><i class="fas fa-building-columns"></i> MH Finance</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">আমরা শরীয়াহ মোতাবেক পরিচালিত একটি নির্ভরযোগ্য আর্থিক প্রতিষ্ঠান। আপনাদের সঞ্চয় ও বিনিয়োগকে নিরাপদ রাখাই আমাদের মূল লক্ষ্য।</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">গুরুত্বপূর্ণ লিংক</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="demo-about.html" class="hover:text-yellow-400 transition-all">আমাদের সম্পর্কে</a></li>
+                    <li><a href="demo-services.html" class="hover:text-yellow-400 transition-all">সকল সেবাসমূহ</a></li>
+                    <li><a href="demo-terms.html" class="hover:text-yellow-400 transition-all">শর্তাবলী ও নীতিমালা</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">যোগাযোগ</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i> পল্লী বিদ্যুৎ অফিসের সামনে, পুলিশ লাইন, কিশোরগঞ্জ।</li>
+                    <li><i class="fas fa-phone-alt text-yellow-400 mr-2"></i> ০১৭১০-XXXXXX, ০১৭২৫-XXXXXX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+            &copy; ২০২৬ MH Finance. সর্বস্বত্ব সংরক্ষিত। | Developed by Monjurul Haque
+        </div>
+    </footer>
+
+    <script>
+        // Menu Configuration
+        const mhMenus = {
+            "সেবাসমূহ": [
+                { name: "সকল সেবাসমূহ", link: "demo-services.html" },
+                { name: "এমএইচ ওয়ালেট", link: "wallet.html" },
+                { name: "iBanking", link: "ibanking.html" }
+            ],
+            "একাউন্টস": [
+                { name: "নতুন একাউন্ট খুলুন", link: "account-open.html" },
+                { name: "স্টুডেন্ট একাউন্ট", link: "demo-student.html" },
+                { name: "ডিপিএস (DPS)", link: "demo-dps.html" }
+            ],
+            "বিনিয়োগ": [
+                { name: "কৃষি বিনিয়োগ", link: "demo-krishi.html" },
+                { name: "বিনিয়োগ (লোন) আবেদন", link: "loan-application.html" }
+            ],
+            "কার্ডস": [
+                { name: "ভিসা কার্ড", link: "demo-visa.html" },
+                { name: "ক্রেডিট কার্ড", link: "creditcard.html" } 
+            ],
+            "আমাদের সম্পর্কে": [
+                { name: "আমাদের সম্পর্কে", link: "demo-about.html" },
+                { name: "যোগাযোগ", link: "contact.html" }
+            ]
+        };
+
+        // Generate Menus
+        function loadMenus() {
+            const desktopMenu = document.getElementById('desktop-menu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            desktopMenu.innerHTML = '';
+            mobileMenu.innerHTML = '';
+
+            for (const category in mhMenus) {
+                let itemsHtml = '';
+                let mobileItemsHtml = '';
+                
+                mhMenus[category].forEach(item => {
+                    itemsHtml += `<a href="${item.link}" class="block px-4 py-2 text-gray-800 hover:bg-green-100 border-b border-gray-100 last:border-0">${item.name}</a>`;
+                    mobileItemsHtml += `<a href="${item.link}" class="block pl-8 pr-4 py-2 text-green-100 hover:bg-green-700 text-sm">${item.name}</a>`;
+                });
+
+                desktopMenu.innerHTML += `
+                    <div class="relative group dropdown">
+                        <button class="hover:text-yellow-300 font-medium py-2 flex items-center gap-1 transition-all">
+                            ${category} <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-lg mt-0 min-w-[180px] overflow-hidden border border-gray-200">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                `;
+
+                mobileMenu.innerHTML += `
+                    <div class="border-b border-green-700">
+                        <div class="px-4 py-3 font-bold text-yellow-300 bg-green-900">${category}</div>
+                        <div class="pb-2">
+                            ${mobileItemsHtml}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadMenus();
+        });
+    </script>
+</body>
+</html>
