@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষি বিনিয়োগ - MH Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+        body { font-family: 'Tiro Bangla', serif; background-color: #f3f4f6; }
+        .bg-bank-green { background-color: #0b8e36; }
+        .text-bank-yellow { color: #facc15; }
+        
+        @media (min-width: 768px) {
+            .dropdown:hover .dropdown-menu { display: block; }
+        }
+        .transition-all { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <nav class="bg-bank-green text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <i class="fas fa-building-columns text-bank-yellow"></i> MH Finance
+                </a>
+                
+                <div class="hidden md:flex space-x-6 items-center" id="desktop-menu"></div>
+
+                <button id="mobileMenuBtn" class="md:hidden text-2xl focus:outline-none">
+                    <i class="fas fa-bars text-bank-yellow"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 border-t border-green-700 max-h-[70vh] overflow-y-auto"></div>
+    </nav>
+
+    <header class="bg-bank-green text-white py-10 px-4 text-center relative overflow-hidden shadow-md">
+        <div class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-br-full opacity-20"></div>
+        <div class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-tl-full opacity-10"></div>
+        <h1 class="text-3xl md:text-5xl font-bold relative z-10"><i class="fas fa-tractor text-bank-yellow"></i> কৃষি বিনিয়োগ</h1>
+        <p class="mt-3 text-green-100 text-base md:text-xl relative z-10">দেশের কৃষিকে এগিয়ে নিতে সহজ শর্তে শরীয়াহ সম্মত অর্থায়ন</p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 mt-8 mb-12 flex-grow w-full">
+        
+        <div class="bg-white rounded-2xl shadow-lg border border-green-200 p-6 md:p-10 mb-10 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/3 flex justify-center">
+                <div class="w-48 h-48 bg-green-50 rounded-full flex items-center justify-center border-4 border-yellow-400 shadow-inner relative overflow-hidden">
+                    <i class="fas fa-seedling text-7xl text-bank-green"></i>
+                    <div class="absolute bottom-0 w-full h-1/3 bg-green-600 opacity-20"></div>
+                </div>
+            </div>
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">কৃষকের মুখে হাসি ফোটানোই আমাদের লক্ষ্য</h2>
+                <p class="text-gray-600 md:text-lg leading-relaxed mb-4">
+                    বাংলাদেশের অর্থনীতি মূলত কৃষিনির্ভর। তাই কৃষকদের ফসল উৎপাদন, গবাদিপশু পালন এবং কৃষি যন্ত্রপাতি ক্রয়ের জন্য এমএইচ ফাইন্যান্স দিচ্ছে সহজ শর্তে ও আকর্ষণীয় মুনাফা হারে কৃষি বিনিয়োগ সুবিধা। আপনার কৃষি উদ্যোগকে সফল করতে আমরা আছি আপনার পাশে।
+                </p>
+            </div>
+        </div>
+
+        <h3 class="text-xl md:text-2xl font-bold text-bank-green mb-6 border-b-2 border-green-200 inline-block pb-2">আমাদের কৃষি বিনিয়োগের খাতসমূহ:</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col text-center">
+                <div class="w-14 h-14 bg-green-50 text-bank-green rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                    <i class="fas fa-wheat-awn"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">ফসল উৎপাদন</h4>
+                <p class="text-gray-500 text-sm">ধান, পাট, গম, সবজি সহ বিভিন্ন মৌসুমি ফসল উৎপাদনের জন্য বীজ ও সার ক্রয়ে অর্থায়ন।</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col text-center">
+                <div class="w-14 h-14 bg-yellow-50 text-yellow-600 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                    <i class="fas fa-tractor"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">কৃষি যন্ত্রপাতি ক্রয়</h4>
+                <p class="text-gray-500 text-sm">ট্রাক্টর, পাওয়ার টিলার, সেচ পাম্প এবং ফসল মাড়াইয়ের আধুনিক মেশিন ক্রয়ে সুবিধা।</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col text-center">
+                <div class="w-14 h-14 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                    <i class="fas fa-fish"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">মৎস্য চাষ</h4>
+                <p class="text-gray-500 text-sm">পুকুর খনন, মাছের পোনা ক্রয় এবং মাছের ফিড কেনার জন্য সহজ শর্তে দীর্ঘমেয়াদি বিনিয়োগ।</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col text-center">
+                <div class="w-14 h-14 bg-red-50 text-red-500 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                    <i class="fas fa-kiwi-bird"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">পোল্ট্রি ও গবাদিপশু</h4>
+                <p class="text-gray-500 text-sm">মুরগি, হাঁস, গরু ও ছাগল পালনের খামার তৈরি এবং সম্প্রসারণের জন্য বিশেষ আর্থিক সহায়তা।</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col text-center">
+                <div class="w-14 h-14 bg-purple-50 text-purple-500 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                    <i class="fas fa-hands-holding-circle"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">শরীয়াহ সম্মত</h4>
+                <p class="text-gray-500 text-sm">আমাদের কৃষি বিনিয়োগ সম্পূর্ণ সুদবিহীন এবং ইসলামী শরীয়াহর বাই-মুয়াজ্জাল বা মুরাবাহা নীতির ভিত্তিতে পরিচালিত।</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col text-center">
+                <div class="w-14 h-14 bg-teal-50 text-teal-500 rounded-full flex items-center justify-center text-2xl mb-4 mx-auto">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800 mb-2">দ্রুত অনুমোদন</h4>
+                <p class="text-gray-500 text-sm">সঠিক কাগজপত্র জমা দেওয়ার পর খুব দ্রুত সময়ের মধ্যে বিনিয়োগ বা লোন অনুমোদন ও ছাড় করা হয়।</p>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-green-50 rounded-2xl p-6 md:p-10 border border-green-200 shadow-md">
+            <h3 class="text-xl md:text-2xl font-bold text-bank-green mb-6 flex items-center gap-2">
+                <i class="fas fa-file-alt"></i> বিনিয়োগ পেতে যা যা লাগবে:
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <ul class="space-y-3 text-gray-700 font-medium">
+                    <li class="flex items-start gap-2"><i class="fas fa-check text-bank-green mt-1"></i> আবেদনকারীর ২ কপি ছবি এবং এনআইডি (NID) কার্ডের ফটোকপি।</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check text-bank-green mt-1"></i> விவசாய বা খামারের জমির পরচা, খতিয়ান অথবা ইজারা দলিল।</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check text-bank-green mt-1"></i> স্থানীয় জনপ্রতিনিধি (চেয়ারম্যান/মেম্বার) প্রদত্ত নাগরিকত্ব সনদ।</li>
+                </ul>
+                <ul class="space-y-3 text-gray-700 font-medium">
+                    <li class="flex items-start gap-2"><i class="fas fa-check text-bank-green mt-1"></i> কৃষি কাজের পূর্ব অভিজ্ঞতা বা উপজেলা কৃষি কর্মকর্তার প্রত্যয়নপত্র।</li>
+                    <li class="flex items-start gap-2"><i class="fas fa-check text-bank-green mt-1"></i> আবেদনকারীর সাথে একজন যোগ্য জামিনদার (Guarantor) এর ছবি ও এনআইডি।</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-gradient-to-r from-bank-green to-green-800 rounded-2xl p-8 text-center text-white shadow-xl relative overflow-hidden">
+            <div class="absolute right-0 top-0 opacity-10 text-9xl transform translate-x-1/4 -translate-y-1/4">
+                <i class="fas fa-hand-holding-dollar"></i>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 relative z-10">কৃষি বিনিয়োগের জন্য আজই আবেদন করুন</h3>
+            <p class="text-green-100 mb-6 relative z-10">সহজ শর্তে লোন পেতে অনলাইনে আবেদন ফর্ম পূরণ করুন অথবা অফিসে যোগাযোগ করুন।</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+                <a href="loan-application.html" class="bg-yellow-400 text-green-900 font-bold px-8 py-3 rounded-full hover:bg-yellow-300 hover:shadow-lg transition-all">
+                    <i class="fas fa-paper-plane mr-2"></i> বিনিয়োগের আবেদন
+                </a>
+                <a href="contact.html" class="bg-transparent border-2 border-yellow-400 text-yellow-400 font-bold px-8 py-3 rounded-full hover:bg-yellow-400 hover:text-green-900 hover:shadow-lg transition-all">
+                    <i class="fas fa-phone-alt mr-2"></i> বিস্তারিত জানুন
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white pt-10 pb-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-2"><i class="fas fa-building-columns"></i> MH Finance</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">আমরা শরীয়াহ মোতাবেক পরিচালিত একটি নির্ভরযোগ্য আর্থিক প্রতিষ্ঠান। আপনাদের সঞ্চয় ও বিনিয়োগকে নিরাপদ রাখাই আমাদের মূল লক্ষ্য।</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">গুরুত্বপূর্ণ লিংক</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-yellow-400 transition-all">হোম পেজ</a></li>
+                    <li><a href="account-open.html" class="hover:text-yellow-400 transition-all">একাউন্ট খোলার আবেদন</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">যোগাযোগ</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i> পল্লী বিদ্যুৎ অফিসের সামনে, পুলিশ লাইন, কিশোরগঞ্জ।</li>
+                    <li><i class="fas fa-phone-alt text-yellow-400 mr-2"></i> ০১৭১০-XXXXXX, ০১৭২৫-XXXXXX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+            &copy; ২০২৬ MH Finance. সর্বস্বত্ব সংরক্ষিত। | Developed by Monjurul Haque
+        </div>
+    </footer>
+
+    <script>
+        // Menu Configuration
+        const mhMenus = {
+            "সেবাসমূহ": [
+                { name: "এমএইচ ওয়ালেট", link: "wallet.html" },
+                { name: "iBanking", link: "ibanking.html" }
+            ],
+            "একাউন্টস": [
+                { name: "নতুন একাউন্ট খুলুন", link: "account-open.html" },
+                { name: "স্টুডেন্ট একাউন্ট", link: "demo-student.html" },
+                { name: "ডিপিএস (DPS)", link: "demo-dps.html" }
+            ],
+            "বিনিয়োগ": [
+                { name: "কৃষি বিনিয়োগ", link: "demo-krishi.html" },
+                { name: "বিনিয়োগ (লোন) আবেদন", link: "loan-application.html" }
+            ],
+            "কার্ডস": [
+                { name: "ভিসা কার্ড", link: "demo-visa.html" },
+                { name: "ক্রেডিট কার্ড", link: "creditcard.html" } 
+            ],
+            "আমাদের সম্পর্কে": [
+                { name: "যোগাযোগ", link: "contact.html" }
+            ]
+        };
+
+        // Generate Menus
+        function loadMenus() {
+            const desktopMenu = document.getElementById('desktop-menu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            desktopMenu.innerHTML = '';
+            mobileMenu.innerHTML = '';
+
+            for (const category in mhMenus) {
+                let itemsHtml = '';
+                let mobileItemsHtml = '';
+                
+                mhMenus[category].forEach(item => {
+                    itemsHtml += `<a href="${item.link}" class="block px-4 py-2 text-gray-800 hover:bg-green-100 border-b border-gray-100 last:border-0">${item.name}</a>`;
+                    mobileItemsHtml += `<a href="${item.link}" class="block pl-8 pr-4 py-2 text-green-100 hover:bg-green-700 text-sm">${item.name}</a>`;
+                });
+
+                desktopMenu.innerHTML += `
+                    <div class="relative group dropdown">
+                        <button class="hover:text-yellow-300 font-medium py-2 flex items-center gap-1 transition-all">
+                            ${category} <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-lg mt-0 min-w-[180px] overflow-hidden border border-gray-200">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                `;
+
+                mobileMenu.innerHTML += `
+                    <div class="border-b border-green-700">
+                        <div class="px-4 py-3 font-bold text-yellow-300 bg-green-900">${category}</div>
+                        <div class="pb-2">
+                            ${mobileItemsHtml}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadMenus();
+        });
+    </script>
+</body>
+</html>
