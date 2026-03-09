@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সকল সেবাসমূহ - MH Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+        body { font-family: 'Tiro Bangla', serif; background-color: #f3f4f6; }
+        .bg-bank-green { background-color: #0b8e36; }
+        .text-bank-yellow { color: #facc15; }
+        
+        @media (min-width: 768px) {
+            .dropdown:hover .dropdown-menu { display: block; }
+        }
+        .transition-all { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <nav class="bg-bank-green text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <i class="fas fa-building-columns text-bank-yellow"></i> MH Finance
+                </a>
+                
+                <div class="hidden md:flex space-x-6 items-center" id="desktop-menu"></div>
+
+                <button id="mobileMenuBtn" class="md:hidden text-2xl focus:outline-none">
+                    <i class="fas fa-bars text-bank-yellow"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 border-t border-green-700 max-h-[70vh] overflow-y-auto"></div>
+    </nav>
+
+    <header class="bg-bank-green text-white py-12 px-4 text-center relative overflow-hidden shadow-md">
+        <div class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-br-full opacity-20"></div>
+        <div class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-tl-full opacity-10"></div>
+        <h1 class="text-3xl md:text-5xl font-bold relative z-10"><i class="fas fa-list-check text-bank-yellow"></i> আমাদের সেবাসমূহ</h1>
+        <p class="mt-3 text-green-100 text-base md:text-xl relative z-10">আপনার আর্থিক প্রয়োজনে আমাদের নির্ভরযোগ্য ও শরীয়াহ সম্মত সার্ভিস</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 mt-8 mb-12 flex-grow w-full">
+        
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-green-200 inline-block pb-2">এক নজরে সকল আর্থিক সুবিধা</h2>
+            <p class="text-gray-600 mt-4">এমএইচ ফাইন্যান্স আপনাদের জন্য নিয়ে এসেছে সম্পূর্ণ সুদমুক্ত এবং যুগোপযোগী বিভিন্ন ব্যাংকিং সেবা।</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <a href="wallet.html" class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group block">
+                <div class="w-16 h-16 bg-green-50 text-bank-green rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-bank-green group-hover:text-white transition-all">
+                    <i class="fas fa-mobile-screen"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">এমএইচ ওয়ালেট</h3>
+                <p class="text-gray-500 text-sm">স্মার্ট ব্যাংকিংয়ের মাধ্যমে সেন্ড মানি, মোবাইল রিচার্জ এবং ইউটিলিটি বিল পে করুন একদম সহজে।</p>
+            </a>
+
+            <a href="ibanking.html" class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group block">
+                <div class="w-16 h-16 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-blue-500 group-hover:text-white transition-all">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">ইন্টারনেট ব্যাংকিং (iBanking)</h3>
+                <p class="text-gray-500 text-sm">রাত-দিন ২৪ ঘণ্টা ঘরে বসেই ব্যালেন্স চেক, ফান্ড ট্রান্সফার এবং স্টেটমেন্ট ডাউনলোডের সুবিধা।</p>
+            </a>
+
+            <a href="demo-visa.html" class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group block">
+                <div class="w-16 h-16 bg-yellow-50 text-yellow-500 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-yellow-500 group-hover:text-white transition-all">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">ভিসা ও ক্রেডিট কার্ড</h3>
+                <p class="text-gray-500 text-sm">ডুয়াল কারেন্সি সাপোর্ট, ইএমআই (EMI) সুবিধা এবং বিশ্বজুড়ে নিরাপদ লেনদেন।</p>
+            </a>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-teal-600 group-hover:text-white transition-all">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">সেভিংস ও কারেন্ট হিসাব</h3>
+                <p class="text-gray-500 text-sm">সকল ধরনের ব্যাংক হিসাব খোলা হয় এবং গ্রাহকদের লেনদেনের সুবিধার্থে ফ্রি এটিএম কার্ড প্রদান করা হয়。</p>
+            </div>
+
+            <a href="demo-dps.html" class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group block">
+                <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-purple-600 group-hover:text-white transition-all">
+                    <i class="fas fa-piggy-bank"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">ডিপিএস ও অন্যান্য হিসাব</h3>
+                <p class="text-gray-500 text-sm">হজ্ব, মোহর, ওয়াকফ, কৃষি ও এমএসএস (ডিপিএস) হিসাব খোলার সুবর্ণ সুযোগ রয়েছে。</p>
+            </a>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                <div class="w-16 h-16 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">ফিক্সড ডিপোজিট (FDR)</h3>
+                <p class="text-gray-500 text-sm">৩, ৬, ৯ মাস এবং ১ থেকে ৫ বছর মেয়াদী আমানত হিসাব এবং আকর্ষণীয় হারে মুনাফা প্রদান করা হয়。</p>
+            </div>
+
+            <a href="demo-student.html" class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group block">
+                <div class="w-16 h-16 bg-indigo-50 text-indigo-500 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">স্টুডেন্ট একাউন্ট</h3>
+                <p class="text-gray-500 text-sm">স্কুল, কলেজ এবং মাদরাসার ছাত্র-ছাত্রীদের জন্য জিরো মেইনটেন্যান্স ফিতে বিশেষ স্টুডেন্ট হিসাব খোলা হয়。</p>
+            </a>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                <div class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-red-500 group-hover:text-white transition-all">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">অনলাইন ফান্ড ট্রান্সফার</h3>
+                <p class="text-gray-500 text-sm">অনলাইনের মাধ্যমে ইসলামী ব্যাংকের সকল শাখায় এবং ইএফটি/আরটিজিএস এর মাধ্যমে দেশের যেকোনো ব্যাংকে টাকা পাঠানো যায়。</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                <div class="w-16 h-16 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-cyan-600 group-hover:text-white transition-all">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">রেমিট্যান্স সেবা</h3>
+                <p class="text-gray-500 text-sm">বিদেশ থেকে মোবাইলে গোপন নম্বরে প্রেরিত টাকা বোনাস সহ সহজেই উঠানো যায়。</p>
+            </div>
+
+        </div>
+
+        <div class="mt-12 bg-green-50 rounded-2xl p-6 md:p-10 border border-green-200 flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold text-bank-green mb-4"><i class="fas fa-clipboard-list mr-2"></i> হিসাব খুলতে যা যা লাগে:</h3>
+                <ul class="list-none space-y-2 text-gray-700 font-medium">
+                    <li><i class="fas fa-check-circle text-bank-green mr-2"></i> হিসাবধারীর ২ কপি ছবি ও এনআইডি/পাসপোর্টের ফটোকপি</li>
+                    <li><i class="fas fa-check-circle text-bank-green mr-2"></i> নমিনির ১ কপি ছবি ও এনআইডি/জন্ম সনদ/পাসপোর্টের ফটোকপি</li>
+                </ul>
+            </div>
+            <div>
+                <a href="account-open.html" class="inline-block bg-bank-green text-white font-bold px-8 py-4 rounded-full hover:bg-green-700 shadow-lg transition-all text-center">
+                    <i class="fas fa-user-plus mr-2"></i> নতুন একাউন্ট খুলুন
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white pt-10 pb-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-2"><i class="fas fa-building-columns"></i> MH Finance</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">আমরা শরীয়াহ মোতাবেক পরিচালিত একটি নির্ভরযোগ্য আর্থিক প্রতিষ্ঠান। আপনাদের সঞ্চয় ও বিনিয়োগকে নিরাপদ রাখাই আমাদের মূল লক্ষ্য।</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">গুরুত্বপূর্ণ লিংক</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="demo-about.html" class="hover:text-yellow-400 transition-all">আমাদের সম্পর্কে</a></li>
+                    <li><a href="demo-services.html" class="hover:text-yellow-400 transition-all">সকল সেবাসমূহ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">যোগাযোগ</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i> পল্লী বিদ্যুৎ অফিসের সামনে, পুলিশ লাইন, কিশোরগঞ্জ।</li>
+                    <li><i class="fas fa-phone-alt text-yellow-400 mr-2"></i> ০১৭১০-XXXXXX, ০১৭২৫-XXXXXX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+            &copy; ২০২৬ MH Finance. সর্বস্বত্ব সংরক্ষিত। | Developed by Monjurul Haque
+        </div>
+    </footer>
+
+    <script>
+        // Menu Configuration
+        const mhMenus = {
+            "সেবাসমূহ": [
+                { name: "সকল সেবাসমূহ", link: "demo-services.html" },
+                { name: "এমএইচ ওয়ালেট", link: "wallet.html" },
+                { name: "iBanking", link: "ibanking.html" }
+            ],
+            "একাউন্টস": [
+                { name: "নতুন একাউন্ট খুলুন", link: "account-open.html" },
+                { name: "স্টুডেন্ট একাউন্ট", link: "demo-student.html" },
+                { name: "ডিপিএস (DPS)", link: "demo-dps.html" }
+            ],
+            "বিনিয়োগ": [
+                { name: "কৃষি বিনিয়োগ", link: "demo-krishi.html" },
+                { name: "বিনিয়োগ (লোন) আবেদন", link: "loan-application.html" }
+            ],
+            "কার্ডস": [
+                { name: "ভিসা কার্ড", link: "demo-visa.html" },
+                { name: "ক্রেডিট কার্ড", link: "creditcard.html" } 
+            ],
+            "আমাদের সম্পর্কে": [
+                { name: "আমাদের সম্পর্কে", link: "demo-about.html" },
+                { name: "যোগাযোগ", link: "contact.html" }
+            ]
+        };
+
+        // Generate Menus
+        function loadMenus() {
+            const desktopMenu = document.getElementById('desktop-menu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            desktopMenu.innerHTML = '';
+            mobileMenu.innerHTML = '';
+
+            for (const category in mhMenus) {
+                let itemsHtml = '';
+                let mobileItemsHtml = '';
+                
+                mhMenus[category].forEach(item => {
+                    itemsHtml += `<a href="${item.link}" class="block px-4 py-2 text-gray-800 hover:bg-green-100 border-b border-gray-100 last:border-0">${item.name}</a>`;
+                    mobileItemsHtml += `<a href="${item.link}" class="block pl-8 pr-4 py-2 text-green-100 hover:bg-green-700 text-sm">${item.name}</a>`;
+                });
+
+                desktopMenu.innerHTML += `
+                    <div class="relative group dropdown">
+                        <button class="hover:text-yellow-300 font-medium py-2 flex items-center gap-1 transition-all">
+                            ${category} <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-lg mt-0 min-w-[180px] overflow-hidden border border-gray-200">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                `;
+
+                mobileMenu.innerHTML += `
+                    <div class="border-b border-green-700">
+                        <div class="px-4 py-3 font-bold text-yellow-300 bg-green-900">${category}</div>
+                        <div class="pb-2">
+                            ${mobileItemsHtml}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadMenus();
+        });
+    </script>
+</body>
+</html>
