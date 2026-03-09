@@ -1,0 +1,21 @@
+{
+  "name": "MH Finance",
+  "short_name": "MH Finance",
+  "description": "MH Finance - Smart Banking Platform",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0b8e36",
+  "theme_color": "#0b8e36",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2830/2830284.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2830/2830284.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
