@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শর্তাবলী ও নীতিমালা - MH Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+        body { font-family: 'Tiro Bangla', serif; background-color: #f3f4f6; }
+        .bg-bank-green { background-color: #0b8e36; }
+        .text-bank-yellow { color: #facc15; }
+        
+        @media (min-width: 768px) {
+            .dropdown:hover .dropdown-menu { display: block; }
+        }
+        .transition-all { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <nav class="bg-bank-green text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <i class="fas fa-building-columns text-bank-yellow"></i> MH Finance
+                </a>
+                
+                <div class="hidden md:flex space-x-6 items-center" id="desktop-menu"></div>
+
+                <button id="mobileMenuBtn" class="md:hidden text-2xl focus:outline-none">
+                    <i class="fas fa-bars text-bank-yellow"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 border-t border-green-700 max-h-[70vh] overflow-y-auto"></div>
+    </nav>
+
+    <header class="bg-bank-green text-white py-12 px-4 text-center relative overflow-hidden shadow-md">
+        <div class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-br-full opacity-20"></div>
+        <div class="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-tl-full opacity-10"></div>
+        <h1 class="text-3xl md:text-5xl font-bold relative z-10"><i class="fas fa-file-contract text-bank-yellow"></i> শর্তাবলী ও নীতিমালা</h1>
+        <p class="mt-3 text-green-100 text-base md:text-xl relative z-10">MH Finance এর সেবাসমূহ ব্যবহারের সাধারণ নিয়মকানুন</p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 mt-8 mb-12 flex-grow w-full">
+        
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-6 md:p-10">
+            
+            <div class="mb-8 border-b border-gray-200 pb-6">
+                <p class="text-gray-600 leading-relaxed md:text-lg">
+                    এমএইচ ফাইন্যান্স (MH Finance) এর ওয়েবসাইট, অ্যাপ এবং ব্যাংকিং সেবাসমূহ ব্যবহার করার আগে অনুগ্রহ করে নিচের শর্তাবলী ও নীতিমালাগুলো মনোযোগ সহকারে পড়ুন। আমাদের যেকোনো সেবা গ্রহণ করার অর্থ হলো আপনি এই শর্তাবলীর সাথে সম্পূর্ণ একমত পোষণ করছেন।
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                
+                <div>
+                    <h2 class="text-xl md:text-2xl font-bold text-bank-green mb-3 flex items-center gap-2">
+                        <i class="fas fa-balance-scale text-yellow-500"></i> ১. শরীয়াহ নীতি ও পরিচালনা
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        এমএইচ ফাইন্যান্স একটি সম্পূর্ণ ইসলামী শরীয়াহ ভিত্তিক আর্থিক প্রতিষ্ঠান। আমাদের সকল লেনদেন, আমানত গ্রহণ এবং বিনিয়োগ কার্যক্রম ইসলামী শরীয়াহ বোর্ড কর্তৃক অনুমোদিত নীতিমালার (মুদারাবা, মুশারাকা, মুরাবাহা ইত্যাদি) ভিত্তিতে পরিচালিত হয়। এখানে কোনো প্রকার সুদের (Riba) লেনদেন করা হয় না।
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl md:text-2xl font-bold text-bank-green mb-3 flex items-center gap-2">
+                        <i class="fas fa-user-check text-yellow-500"></i> ২. হিসাব খোলা ও পরিচালনা
+                    </h2>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-2">
+                        <li>একাউন্ট খোলার সময় গ্রাহককে সঠিক ও হালনাগাদ তথ্য প্রদান করতে হবে। ভুয়া তথ্য প্রদান আইনত দণ্ডনীয়।</li>
+                        <li>যেকোনো সময় গ্রাহকের তথ্যের সত্যতা যাচাই করার অধিকার কর্তৃপক্ষ সংরক্ষণ করে।</li>
+                        <li>একাউন্টে কোনো সন্দেহজনক লেনদেন পরিলক্ষিত হলে কর্তৃপক্ষ সাময়িকভাবে একাউন্ট স্থগিত করার ক্ষমতা রাখে।</li>
+                        <li>হিসাব পরিচালনার জন্য বাংলাদেশ ব্যাংক কর্তৃক নির্ধারিত চার্জ ও ফি প্রযোজ্য হতে পারে।</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl md:text-2xl font-bold text-bank-green mb-3 flex items-center gap-2">
+                        <i class="fas fa-mobile-screen text-yellow-500"></i> ৩. ডিজিটাল ব্যাংকিং ও কার্ড সেবা
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed mb-2">
+                        iBanking, এমএইচ ওয়ালেট এবং কার্ড (ডেবিট/ক্রেডিট) ব্যবহারের ক্ষেত্রে নিম্নলিখিত শর্ত প্রযোজ্য:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2 ml-2">
+                        <li>গ্রাহক তার ইউজার আইডি, পাসওয়ার্ড, পিন (PIN) এবং ওটিপি (OTP) সম্পূর্ণ গোপনে রাখবেন। এটি কারও সাথে শেয়ার করা যাবে না।</li>
+                        <li>গ্রাহকের অসতর্কতার কারণে আইডি বা পিন বেহাত হয়ে কোনো আর্থিক ক্ষতি হলে এমএইচ ফাইন্যান্স তার জন্য দায়ী থাকবে না।</li>
+                        <li>কার্ড হারিয়ে গেলে বা চুরি হলে সাথে সাথে কাস্টমার কেয়ারে জানিয়ে কার্ড ব্লক করতে হবে।</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl md:text-2xl font-bold text-bank-green mb-3 flex items-center gap-2">
+                        <i class="fas fa-hand-holding-dollar text-yellow-500"></i> ৪. বিনিয়োগ ও ঋণ প্রদান
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        বিনিয়োগ বা লোন অনুমোদনের বিষয়টি সম্পূর্ণভাবে কর্তৃপক্ষের যাচাই-বাছাইয়ের ওপর নির্ভরশীল। আবেদন করলেই বিনিয়োগ পাওয়া যাবে, এমন কোনো নিশ্চয়তা নেই। বিনিয়োগ চুক্তির সকল শর্ত মেনে নির্দিষ্ট সময়ের মধ্যে কিস্তি পরিশোধ করতে গ্রাহক বাধ্য থাকবেন।
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl md:text-2xl font-bold text-bank-green mb-3 flex items-center gap-2">
+                        <i class="fas fa-edit text-yellow-500"></i> ৫. শর্তাবলীর পরিবর্তন ও পরিবর্ধন
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        এমএইচ ফাইন্যান্স যেকোনো সময় পূর্ব ঘোষণা ছাড়াই এই শর্তাবলী পরিবর্তন, পরিবর্ধন বা বাতিল করার অধিকার সংরক্ষণ করে। পরিবর্তিত শর্তাবলী ওয়েবসাইট ও অ্যাপে প্রকাশের সাথে সাথেই কার্যকর বলে গণ্য হবে। নিয়মিত এই পাতাটি ভিজিট করে আপডেট জেনে নেওয়ার দায়িত্ব গ্রাহকের।
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-10 bg-green-50 border border-green-200 p-6 rounded-xl flex items-start gap-4">
+                <i class="fas fa-check-circle text-3xl text-bank-green mt-1"></i>
+                <p class="text-gray-700 font-medium">
+                    আমাদের সার্ভিস ব্যবহার করে আপনি স্বীকার করছেন যে আপনি ওপরের সমস্ত শর্তাবলী পড়েছেন, বুঝেছেন এবং এতে আপনার পূর্ণ সম্মতি রয়েছে।
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white pt-10 pb-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-2"><i class="fas fa-building-columns"></i> MH Finance</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">আমরা শরীয়াহ মোতাবেক পরিচালিত একটি নির্ভরযোগ্য আর্থিক প্রতিষ্ঠান। আপনাদের সঞ্চয় ও বিনিয়োগকে নিরাপদ রাখাই আমাদের মূল লক্ষ্য।</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">গুরুত্বপূর্ণ লিংক</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="demo-about.html" class="hover:text-yellow-400 transition-all">আমাদের সম্পর্কে</a></li>
+                    <li><a href="demo-services.html" class="hover:text-yellow-400 transition-all">সকল সেবাসমূহ</a></li>
+                    <li><a href="demo-terms.html" class="hover:text-yellow-400 transition-all">শর্তাবলী ও নীতিমালা</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">যোগাযোগ</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i> পল্লী বিদ্যুৎ অফিসের সামনে, পুলিশ লাইন, কিশোরগঞ্জ।</li>
+                    <li><i class="fas fa-phone-alt text-yellow-400 mr-2"></i> ০১৭১০-XXXXXX, ০১৭২৫-XXXXXX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+            &copy; ২০২৬ MH Finance. সর্বস্বত্ব সংরক্ষিত। | Developed by Monjurul Haque
+        </div>
+    </footer>
+
+    <script>
+        // Menu Configuration
+        const mhMenus = {
+            "সেবাসমূহ": [
+                { name: "সকল সেবাসমূহ", link: "demo-services.html" },
+                { name: "এমএইচ ওয়ালেট", link: "wallet.html" },
+                { name: "iBanking", link: "ibanking.html" }
+            ],
+            "একাউন্টস": [
+                { name: "নতুন একাউন্ট খুলুন", link: "account-open.html" },
+                { name: "স্টুডেন্ট একাউন্ট", link: "demo-student.html" },
+                { name: "ডিপিএস (DPS)", link: "demo-dps.html" }
+            ],
+            "বিনিয়োগ": [
+                { name: "কৃষি বিনিয়োগ", link: "demo-krishi.html" },
+                { name: "বিনিয়োগ (লোন) আবেদন", link: "loan-application.html" }
+            ],
+            "কার্ডস": [
+                { name: "ভিসা কার্ড", link: "demo-visa.html" },
+                { name: "ক্রেডিট কার্ড", link: "creditcard.html" } 
+            ],
+            "আমাদের সম্পর্কে": [
+                { name: "আমাদের সম্পর্কে", link: "demo-about.html" },
+                { name: "যোগাযোগ", link: "contact.html" }
+            ]
+        };
+
+        // Generate Menus
+        function loadMenus() {
+            const desktopMenu = document.getElementById('desktop-menu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            desktopMenu.innerHTML = '';
+            mobileMenu.innerHTML = '';
+
+            for (const category in mhMenus) {
+                let itemsHtml = '';
+                let mobileItemsHtml = '';
+                
+                mhMenus[category].forEach(item => {
+                    itemsHtml += `<a href="${item.link}" class="block px-4 py-2 text-gray-800 hover:bg-green-100 border-b border-gray-100 last:border-0">${item.name}</a>`;
+                    mobileItemsHtml += `<a href="${item.link}" class="block pl-8 pr-4 py-2 text-green-100 hover:bg-green-700 text-sm">${item.name}</a>`;
+                });
+
+                desktopMenu.innerHTML += `
+                    <div class="relative group dropdown">
+                        <button class="hover:text-yellow-300 font-medium py-2 flex items-center gap-1 transition-all">
+                            ${category} <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-xl rounded-lg mt-0 min-w-[180px] overflow-hidden border border-gray-200">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                `;
+
+                mobileMenu.innerHTML += `
+                    <div class="border-b border-green-700">
+                        <div class="px-4 py-3 font-bold text-yellow-300 bg-green-900">${category}</div>
+                        <div class="pb-2">
+                            ${mobileItemsHtml}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadMenus();
+        });
+    </script>
+</body>
+</html>
